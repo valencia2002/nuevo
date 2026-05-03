@@ -1,9 +1,7 @@
 name: Deployment Exercise 1
 on: push
 jobs:
-  lint:
-  test:
-  deploy
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -17,4 +15,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy code
-      run: echo "Deployment..."
+        run: echo "Deployment..."
